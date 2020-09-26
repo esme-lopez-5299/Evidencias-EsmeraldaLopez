@@ -1,0 +1,64 @@
+﻿<Window x:Class="Unidad2ZapateriaIxchel.vndEditar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Unidad2ZapateriaIxchel"
+        mc:Ignorable="d"
+        Title="vndEditar" Height="450" Width="800" Loaded="Window_Loaded" Closing="Window_Closing">
+    <Window.Background>
+        <ImageBrush ImageSource="fndoesme-02.png"></ImageBrush>
+    </Window.Background>
+    <DockPanel>
+
+        <TextBlock FontSize="25" DockPanel.Dock="Top"  Margin="0,15,-0.4,0" Foreground="WhiteSmoke" FontFamily="Script MT" Text="Editar" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Right" Height="34" Width="794">
+            <TextBlock.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF3F225D" Offset="0" FrameworkElement.FlowDirection="RightToLeft"/>
+                    <GradientStop Color="#FFD242F3" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBlock.Background>
+        </TextBlock>
+        <WrapPanel DockPanel.Dock="Bottom" HorizontalAlignment="Right" Margin="0,0,180,30">
+            <Button Width="50" Height="50" Margin="0,0,10,0" Name="btnAceptar" Click="BtnAceptar_Click" Background="Transparent" BorderBrush="Transparent">
+                <Image Source="aceptar.png"></Image>
+            </Button>
+            <Button Width="45" Name="btnCancelar" Click="BtnCancelar_Click" Background="Transparent" BorderBrush="Transparent">
+                <Image Source="eliminar-simbolo.png"></Image>
+            </Button>
+        </WrapPanel>
+        <Grid  Margin="150,50,180,80">
+            <Grid.Resources>
+                <Style TargetType="TextBlock">
+                    <Setter Property="FontSize" Value="25"></Setter>
+                </Style>
+                <Style TargetType="TextBox">
+                    <Setter Property="FontSize" Value="15"></Setter>
+                    <Setter Property="Margin" Value="0,10,0,0"></Setter>
+                    <Setter Property="BorderBrush" Value="Orchid"></Setter>
+                </Style>
+            </Grid.Resources>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition ></ColumnDefinition>
+                <ColumnDefinition Width="1.5*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0">ID:</TextBlock>
+            <TextBlock Grid.Row="1">Talla:</TextBlock>
+            <TextBlock Grid.Row="2">Unidades:</TextBlock>
+            <TextBlock Grid.Row="3">Ancho Pierna:</TextBlock>
+            <TextBlock Grid.Row="4">Id Zapato:</TextBlock>
+            <TextBox Background="WhiteSmoke" IsEnabled="False" Name="txtIdInventario" Grid.Column="1" Grid.Row="0" Text="{Binding idInventario}" ></TextBox>
+            <TextBox Background="WhiteSmoke" IsEnabled="False" Name="txtTalla" Grid.Column="1" Grid.Row="1" Text="{Binding Talla}" ></TextBox>
+            <TextBox Name="txtUnidades" Grid.Column="1" Grid.Row="2" Text="{Binding Unidades}"></TextBox>
+            <TextBox Grid.Column="1"  Name="txtAnchoPierna" Grid.Row="3" Text="{Binding AnchoPierna}" ></TextBox>
+            <TextBox Background="WhiteSmoke" IsEnabled="False" Grid.Column="1" Name="txtIdZapato"  Grid.Row="4" Text="{Binding idZapato}" ></TextBox>
+        </Grid>
+    </DockPanel>
+</Window>

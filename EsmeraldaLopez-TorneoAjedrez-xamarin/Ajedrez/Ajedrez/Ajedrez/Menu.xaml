@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ajedrez.Menu" BackgroundColor="#009688">
+    <ContentPage.Content>
+        <StackLayout Margin="10" VerticalOptions="Center">
+            <Button HeightRequest="50" Text="Convocatoria" x:Name="BtnConvocatoria" Clicked="BtnConvocatoria_Clicked"  WidthRequest="140" BackgroundColor="#FFABF0E0">    </Button>
+            <Button HeightRequest="50" BackgroundColor="#FFABF0E0" Text="Participantes"  x:Name="BtnParticipantes" WidthRequest="140" Clicked="BtnParticipantes_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

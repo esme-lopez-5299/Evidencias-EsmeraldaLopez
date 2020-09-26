@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ajedrez.vndVer" BackgroundColor="#009688">
+    <ContentPage.Content>
+        <StackLayout Margin="25">
+            <Label FontAttributes="Bold" TextColor="White" Text="Participante" HorizontalTextAlignment="Center" FontSize="25" Margin="0,0,0,20"></Label>
+            <Grid HorizontalOptions="Center" >
+                <Grid.Resources>
+                    <Style TargetType="Label">
+                        <Setter Property="TextColor" Value="White"></Setter>
+                    <Setter Property="FontSize" Value="13"></Setter>
+                    <Setter Property="HeightRequest" Value="55"></Setter>
+                    </Style>
+                    <Style TargetType="Frame">
+                    <Setter Property="HeightRequest" Value="30"></Setter>
+                </Style>
+                </Grid.Resources>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+               
+                <Frame BackgroundColor="#B1D2C3" >
+                    <Label FontAttributes="Bold" Text="Nombre:"></Label>
+                </Frame>
+                <Frame BackgroundColor="#94CBB2" Grid.Column="1">
+                    <Label Text="{Binding Nombre}" Grid.Column="1"></Label>
+                </Frame>
+            
+                <Frame BackgroundColor="#B1D2C3" Grid.Row="1">
+                    <Label FontAttributes="Bold" Text="Apellido Paterno:" Grid.Row="1"></Label>
+                </Frame >
+                <Frame BackgroundColor="#94CBB2" Grid.Column="1" Grid.Row="1">
+                    <Label Text="{Binding ApellidoP}" Grid.Column="1" Grid.Row="1"></Label>
+                </Frame>
+                <Frame BackgroundColor="#B1D2C3" Grid.Row="2">
+                    <Label FontAttributes="Bold" Text="Apellido Materno:" Grid.Row="2"></Label>
+                </Frame>
+                <Frame BackgroundColor="#94CBB2" Grid.Column="1" Grid.Row="2">
+<Label Text="{Binding ApellidoM}" Grid.Column="1" Grid.Row="2"></Label>
+                </Frame>
+                <Frame BackgroundColor="#B1D2C3" Grid.Row="3">
+<Label FontAttributes="Bold" Text="Número de teléfono:" Grid.Row="3"></Label>
+                </Frame>
+                <Frame BackgroundColor="#94CBB2"  Grid.Column="1" Grid.Row="3">
+<Label Text="{Binding NumTel}" Grid.Column="1" Grid.Row="3"></Label>
+                </Frame>
+                <Frame BackgroundColor="#B1D2C3" Grid.Row="4">
+<Label FontAttributes="Bold" Text="Edad:" Grid.Row="4"></Label>
+                </Frame>
+                <Frame BackgroundColor="#94CBB2" Grid.Column="1" Grid.Row="4">
+<Label Text="{Binding Edad}" Grid.Column="1" Grid.Row="4"></Label>
+                </Frame>
+                
+            </Grid>
+            <!--<StackLayout.Resources>
+                <Style TargetType="Label">
+                    
+                </Style>
+            </StackLayout.Resources>-->
+            
+         
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

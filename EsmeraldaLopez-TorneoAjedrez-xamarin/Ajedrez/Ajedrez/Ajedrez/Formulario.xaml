@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ajedrez.Formulario" BackgroundColor="#009688">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Agregar"  Clicked="ToolbAgregar_Clicked" x:Name="toolbAgregar"></ToolbarItem>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout Margin="25">
+            <StackLayout.Resources>
+                <Style TargetType="Label">
+                    <Setter Property="TextColor" Value="White"></Setter>
+                    <Setter Property="FontFamily" Value="Arial"></Setter>
+                    <Setter Property="FontSize" Value="15"></Setter>
+                </Style>
+            </StackLayout.Resources>
+            <Label Text="Inscripción" HorizontalTextAlignment="Center" FontSize="20" FontAttributes="Bold"></Label>
+            <Label FontAttributes="Bold" Text="Nombre"></Label>
+            <Entry Text="{Binding Nombre}"></Entry>
+            <Label FontAttributes="Bold" Text="Apellido Paterno"></Label>
+            <Entry Text="{Binding ApellidoP}"></Entry>
+            <Label FontAttributes="Bold" Text="Apellido Materno"></Label>
+            <Entry Text="{Binding ApellidoM}"></Entry>
+            <Label FontAttributes="Bold" Text="Número de teléfono"></Label>
+            <Entry Keyboard="Numeric" Text="{Binding NumTel}"></Entry>
+            <Label FontAttributes="Bold" Text="Edad"></Label>
+            <Entry Text="{Binding Edad}" Keyboard="Numeric"></Entry>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

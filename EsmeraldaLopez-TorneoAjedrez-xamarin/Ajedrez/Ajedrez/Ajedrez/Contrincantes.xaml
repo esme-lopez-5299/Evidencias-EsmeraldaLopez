@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ajedrez.Contrincantes" BackgroundColor="#009688">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem  Icon="agrega.png" Clicked="ToolbarItem_Clicked"></ToolbarItem>
+    </ContentPage.ToolbarItems>
+    <ScrollView Grid.Row="2">
+
+        <StackLayout Spacing="20">
+            <StackLayout.Resources>
+                <Style TargetType="Label">
+                    <Setter Property="TextColor" Value="White"></Setter>
+                </Style>
+            </StackLayout.Resources>
+            <Label HorizontalTextAlignment="Center" Text="Lista de participantes" FontSize="25" ></Label>
+            <Frame BackgroundColor="LightGray" HeightRequest="25">
+            <Grid Margin="100,0,0,0" x:Name="grdTitulo" IsVisible="True" Grid.Column="1">
+                <Grid.Resources>
+                    <Style TargetType="Label">
+                        <Setter Property="FontSize" Value="15"></Setter>
+                        <Setter Property="TextColor" Value="White"></Setter>
+                        <Setter Property="FontAttributes" Value="Bold"></Setter>
+                    </Style>
+                </Grid.Resources>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label  Text="Nombre" Grid.Column="0" ></Label>
+                <Label Text="Apellido" Grid.Column="1"></Label>
+                <Label Text="Edad" Grid.Column="2"></Label>
+            </Grid>
+</Frame>
+            <ListView x:Name="lstParticipantes" HasUnevenRows="True" Margin="5" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.ContextActions>
+                                <MenuItem BindingContext="{Binding .}" x:Name="btnEliminar" Clicked="BtnEliminar_Clicked" Text="Eliminar"></MenuItem>
+                                <MenuItem BindingContext="{Binding .}" x:Name="btnEditar" Clicked="BtnEditar_Clicked" Text="Editar"></MenuItem>
+                                <MenuItem BindingContext="{Binding .}" x:Name="btnVer" Clicked="BtnVer_Clicked" Text="Ver"></MenuItem>
+                            </ViewCell.ContextActions>
+                            <Frame Padding="3">
+                                <Grid BackgroundColor="#009688">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition></ColumnDefinition>
+                                        <ColumnDefinition></ColumnDefinition>
+                                        <ColumnDefinition></ColumnDefinition>
+                                        <ColumnDefinition></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+                                    <Image Source="peon.png" WidthRequest="50" HorizontalOptions="Center"></Image>
+                                    <Label Grid.Column="1" VerticalTextAlignment="Center" Text="{Binding Nombre}" HorizontalOptions="FillAndExpand" LineBreakMode="WordWrap"  HorizontalTextAlignment="Start" FontSize="15"></Label>
+                                    <Label Grid.Column="2" VerticalTextAlignment="Center" Text="{Binding ApellidoP}" HorizontalOptions="FillAndExpand" LineBreakMode="WordWrap"  HorizontalTextAlignment="Start" FontSize="15"></Label>
+                                    <Label Grid.Column="3" Text="{Binding Edad}" HorizontalOptions="FillAndExpand" LineBreakMode="WordWrap" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" FontSize="15"></Label>
+                                </Grid>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

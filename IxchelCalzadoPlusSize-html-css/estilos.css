@@ -1,0 +1,1469 @@
+﻿body
+{
+    width:100%;
+    margin:0;
+    background-color:white;
+}
+
+
+@font-face {
+    font-family: fuenteCaviar;
+    src: url("CaviarDreams.ttf");
+}
+
+
+*{
+    box-sizing:border-box;  
+    font-family:fuenteCaviar;
+    
+}
+
+header {
+    height: 100px;
+    width:100%;
+    /*background-color: #BF6BC7;*/
+    background-color:white;
+    position: fixed;
+    z-index:100;
+    top: 0px;
+    left: 0;
+}
+
+    header input {
+        background-image: url(images/lupe.png);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: contain;
+        width: 15%;
+        height: 30px;
+        padding-left: 40px;
+        margin: 30px 0 0 2%;
+        border-radius: 50px;
+        float: left;
+    }
+
+    header h1 {
+        font-size: 50px;
+        margin: 10%;
+        padding-left: 10%;
+        background-image: url(images/Logo.png);
+        background-repeat: no-repeat;
+        background-position: center left;
+        background-size: 90px auto;
+        line-height: 100px;
+        float: left;
+        margin-top: 0;
+        color: #8C3894;
+        max-width:73%;
+    }
+   
+
+    header a {
+        width:2%;
+        color: #8C3894;
+        font-size: 25px;
+        margin: 30px 0 0 5px;        
+        float: left;
+    }
+
+        header a:hover {
+            color: #CC89D2;
+        }
+
+nav {
+    background-color: #632768;
+    height: 30px;
+    position: fixed;
+    z-index:100;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    
+}
+
+
+    nav ol {
+        list-style: none;
+        /*background-color:green;*/
+        /*margin-left: 250px;*/
+        margin-top: 0;
+        padding: 0;
+        height: 30px;
+    }
+
+        nav ol ul {
+            display: none;
+        }
+
+    nav > ol > li {
+        float: left;
+        width: 150px;
+        /*background-color:pink;*/
+        height: 30px;
+    }
+
+        nav > ol > li:hover {
+            background-color: #CC89D2;
+        }
+
+        nav > ol > li > a {
+            /*background-color: aqua;*/
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            line-height: 30px;
+            display: block;
+            font-size: 18px;
+        }
+
+        nav > ol > li:hover ul {
+            display: block;
+        }
+
+    nav ol li ul {
+        border: 1px solid black;
+        width: 150px;
+        padding: 0;
+        background-color: #632768;
+        list-style: none;
+    }
+
+        nav ol li ul li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 3px;
+            font-size: 12px;
+        }
+
+        nav ol li ul li :hover {
+            background-color: #CC89D2;
+        }
+
+
+#mainInicio {
+    margin: 130px 0 5% 0;    
+    width: 100%;
+    overflow:hidden;    
+}
+
+
+
+
+.llamadaAccion {
+    width: 100%;    
+    overflow: hidden;
+    height:500px;
+    position: relative; 
+    margin-bottom:1%;
+}
+
+    #fotoInicio{            
+        width:100%;         
+    }
+
+.ComprarYa {
+    position: absolute;
+    top: 85%;
+    left: 45%;  
+    color: black;
+    text-decoration:none;
+    background-color: #DBA9CE;
+    font-size: large;    
+    font-weight:bold;
+    border: 4px solid Whitesmoke;
+    width:20%;
+    height:50px;
+    text-align:center;
+    line-height:40px;
+    
+}
+
+    .ComprarYa:hover {
+        background-color: #632768;
+    }
+
+.categorias > div {    
+    width: 24%;
+    overflow:hidden;
+    /*height:450px;*/
+    float:left;
+    /*border:2px solid whitesmoke;*/
+    margin-right:1%;  
+    position:relative;
+}
+
+.categorias>div:nth-last-child(1)
+{
+    width:24%;
+    margin-right:0px;
+}
+
+.categorias div div a{
+      display: block;
+    position: absolute;
+    top: 10%;
+    text-align:center;
+    text-decoration: none;
+    font-size: xx-large;
+    font-family: fuenteCaviar;
+    width: 100%;
+    font-weight: bold;
+    color: black;
+}
+
+
+.categorias div a img{
+    width:100%;
+    
+}
+
+.propaganda {
+    margin-top: 32%;
+    clear: left;
+    position: relative;
+    width:100%;
+}
+
+    .propaganda #enviogratis {
+        margin: 0;
+        width: 100%;
+        text-align:center;
+        background-color: #8C47D7;
+        height: 50px;
+        line-height: 50px;        
+        color: white;
+        text-shadow: 5px 5px 3px #000000;
+        width: 100%;
+    }
+
+#etiquetas a {
+    margin-top:0;
+    font-size: 50px;    
+    color: black;    
+}
+
+    #etiquetas a i {
+        margin: 0;
+        color: black;
+        font-size: 50px;
+        padding-top: 0px;
+        color: black;
+        padding-top: 10%;
+        padding-left:20%;
+        padding-right:10px;
+    }
+
+        #etiquetas {
+            width: 100%;
+            height: 400px;
+            margin-top: 1%;
+            background-color: whitesmoke;
+        }
+
+    #lafatshionistadiv{
+               width:100%;           
+               overflow:hidden;
+               position:absolute;
+               top:80px;
+               left:60%;               
+    }
+
+    #lafatshionistadiv img {
+        width:300px;
+    }
+    
+
+footer {
+ 
+    clear: both;
+   margin-top:5%;   
+    padding-top:20px;
+    background-color: black;
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+   .redes-sociales{
+       width:100%;
+       text-align:center;
+       
+        /*padding-left:40%;*/        
+    }
+
+   .redes-sociales i{
+       color:white;
+       font-size:15px;
+       padding:5px;
+   }
+
+   .redes-sociales label{
+       color:white;
+       font-size:15px;
+       font-weight:bold;
+   }
+
+footer h3 {
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-size: 15px;
+    height: 30px;
+    line-height: 30px;
+    
+}
+
+/*Estilos para política de devolucion, politica de envio, politicas*/
+.banner {
+    background-color: #D7C0EC;
+    width: 100%;    
+    margin: 150px 0% 20px 0%;    
+    text-align: center;
+    height: 100px;
+    letter-spacing: 4px;
+    font-size: 50px;
+    line-height: 100px;
+    border-radius: 50px;
+    color: white;
+}
+
+.politicas{    
+    width:100%;    
+    text-align:justify;
+}
+
+.politicas li{
+    margin-bottom:10px;
+    font-size:20px;   
+    font-weight:bold;
+}
+
+.comentarios, .dudas {
+    width: 100%;
+    margin: 1% 0%;
+    font-size: 20px; 
+    
+}
+
+.dudas {      
+    
+    text-align:center;   
+}
+
+.botoncito {
+    /*width: 70%;*/
+    margin:auto;
+    color: black;
+    text-decoration: none;
+    background-color: #D7C0EC ;
+    font-size: 25px;
+    font-weight: bold;
+    border: 4px solid Whitesmoke;
+    width: 250px;
+    height: 50px;    
+    text-align: center;
+    line-height: 40px;
+    display:block;     
+}
+
+    .botoncito:hover {
+        background-color:#AF81D9;
+        
+    }
+
+    .privacidad{       
+        text-align:justify;        
+        font-weight:bold;   
+        margin:0;
+    }
+
+    .mRestantes{
+        width:70%;
+        height:1000px;
+        margin:130px 15% 5% 15%;
+    }
+
+.mGaleria {
+    width: 70%;
+    height: 2000px;
+    margin: 130px 15% 5% 15%;
+}
+
+.mPerfectFit {
+    width: 70%;
+    height: 2000px;
+    margin: 130px 15% 5% 15%;
+}
+
+#videoMedidas {
+    width: 70%;
+    margin: 1% 15%;
+}
+
+    #fotoMedidas{
+        width:70%;
+        margin:auto;
+        display:block;
+    }
+
+    /*para dar estilo a GaleriaClientas*/
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 1% 2% 0;
+}
+
+    .column a {
+        margin-top: 8px;
+        /*vertical-align: middle;*/
+    }
+
+    .clienta{
+        display:block;        
+    }
+
+    .column p{
+        text-align:justify;
+        font-weight:bold;
+    }
+
+    /*Es para darle estilo a la página de Zapatos*/
+    details{
+        float:left;
+    }
+
+    .filtro{
+        background-color:lightgray;
+        float:left;
+        padding:0 10px;
+        width:120px;        
+    }
+
+    .filtro h6{
+        font-size:15px;
+        clear:left;
+        margin:10px 0;
+    }
+
+        .filtro label {            
+            width: 30px;            
+            margin: 0 5px 5px 0;
+            text-align:center;            
+            color:black;
+            font-weight:bold;
+        }
+
+        .filtro input{
+            margin-right:5px;
+        }
+     
+
+details summary{
+    font-size:20px;
+    
+}
+
+#infoZapatos{
+    width:80%;
+    margin:0 0 5% 20%; 
+   /*float:left;*/    
+   
+}
+
+#infoZapatos  a{
+    display:block;
+    float:left; 
+    width:20%;
+    padding:0px 10px 0px 10px;
+    margin:0px 5px 5px 5px;
+   text-align:center;
+   font-weight:bold;
+   text-decoration:none;
+   font-size:14px;   
+   color:black;
+}
+
+#infoZapatos a:nth-last-child(1){
+    margin-bottom:80px;
+}
+
+#infoZapatos a img{
+    width:100%;
+}
+
+#infoZapatos a h6{
+    margin:0;    
+    font-size:15px;
+}
+
+/*Estilos para el blog*/
+.articulos{
+    float:left;
+    width:70%;
+    margin:2% 0% 1% 0;        
+}
+
+.articuloPreview{
+    margin-bottom:5%;
+    background-color:whitesmoke;
+    padding-bottom:20px;
+}
+
+.articuloPreview img{
+    width:100%;
+   
+}
+
+.suscripcion {
+    width: 25%;
+    float: right;
+    margin: 2% 1% 0 0;
+}
+
+.articuloPreview h3, .articuloPreview p{
+    padding:0 10px 0 10px;
+    font-size:larger;
+}
+
+.leer-mas {
+    margin:0 0 0 80%;
+    color: black;
+    text-decoration: none;
+    background-color: #D7C0EC;
+    font-size: 18px;
+    font-weight: bold;
+    border: 4px solid Whitesmoke;
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    line-height: 30px;
+    display: block;
+}
+
+    .leer-mas:hover {
+        background-color: #632768;
+    }
+
+/*Estilos para la suscripción*/
+.suscripcion{
+    background-color:whitesmoke;
+    padding-bottom:20px;
+}
+
+.suscripcion label{
+    display:block;
+    padding-left:20px;
+    color:black;
+}
+
+    .suscripcion input {
+        display: block;
+        margin:0 0 5px 20px ;      
+        /*padding-left: 5px;*/
+        width:80%;
+    }
+
+    .suscripcion select {
+        display: block;
+        margin: 0 0 5px 20px;
+        width:80%;
+        font-size:15px;        
+    }
+
+    #submit{
+        margin:15px 0 30px 20px;
+    }
+
+    .suscripcion h4{
+        padding:10px;
+        color:black;
+    }
+    /*Estilos para la pagina de la bota*/
+.visualizacion {
+    width: 25%;
+    margin-top:5%;
+    float:left;
+}
+
+    .botita{
+        float:left;
+        width:50%;        
+    }
+
+    .botita img{
+        width:100%;
+    }
+
+
+    .visualizacion ul{
+        list-style:none;
+    }
+
+    .preview img{
+        width:100%;
+    }
+
+    .informacionBota{
+        border-bottom:1px solid black;
+        margin:0;
+        font-size:larger;
+    }
+
+   .Detalles-Medidas{
+       margin:7px 0 4px 5px;
+       font-size:14px;
+       
+   }
+
+    #descripcion{
+        display:block;
+        text-align:justify;
+        font-size:12px;
+    }
+
+    .header-medida{
+        display:inline;
+        font-weight:bold;
+        font-size:small;
+    }
+
+    .medida{
+        font-size:small;
+    }
+
+    .preview{
+        width:50%;
+        float:left;        
+    }
+
+    .preview img{
+        width:100%;
+    }
+
+    .detallesZapato{
+        float:left;
+        width:25%;
+        margin-top:10%;
+    }
+    
+    #precio{
+        display:block;
+        margin:10px 0 10px 0;
+        font-size:medium;
+        font-weight:bold;
+    }
+
+    #guia-tallas{
+        margin:0;
+    }
+    .color-talla{
+        font-size:medium;
+        font-weight:bold;
+        margin:5px 0 5px 0;
+    }
+
+    .detallesZapato select{
+        font-size:medium;
+        margin-bottom:5px;
+    }
+
+#Carrito {    
+    color: black;
+    text-decoration: none;
+    background-color: #DBA9CE;
+    font-size: 20px;
+    font-weight: bold;
+    border: 4px solid Whitesmoke;
+    width: 250px;
+    height: 40px;
+    text-align: center;
+    line-height: 20px;
+    margin:10px 0 10px 0;
+}
+
+    #Carrito:hover {
+        background-color: #632768;
+    }
+
+    main table{
+        background-color:white;
+        color:black;
+        margin:5px 0 0 0;
+        
+    }
+
+    main table tr th{
+      background-color:black;
+      color:white;
+        border:none;
+        font-size:medium;
+    }
+
+    main table tr:nth-last-child(2n){
+        background-color:whitesmoke;   
+    }
+
+    .similares{
+        clear:both;
+        
+    }
+
+.articulo-similar {
+    width: 19%;
+    display: block;
+    float:left;
+    margin:0 1% 5% 0;
+    text-decoration:none;
+    color:black;
+}
+
+.articulo-similar h6{
+    margin:0;
+    font-size:medium;
+    padding:0;
+    color:black;
+}
+
+.articulo-similar:nth-last-child(1){
+    margin:0 0 2% 0;
+}
+        .articulo-similar img{
+            
+            width:100%;
+        }
+
+        #titulo-similares{
+            text-align:center;
+            font-size:25px;
+            margin:0;
+        }
+        
+        
+        /*Estilos para la página iniciar sesión*/
+.iniciar-sesion {
+    width: 48%;
+    margin-right: 1%;
+    float: left;
+    background-color: whitesmoke;
+}
+
+        .crear-cuenta{
+            width:50%;
+            float:left;
+            background-color:whitesmoke;        
+        }
+
+        #divInicioSesion{
+            padding-bottom:39%;
+            padding-top:5%;
+        }
+
+/*Estilos para la página Conoceme*/
+.fotosEsme{
+    width:40%;
+    float:left;
+    margin-right:20px;
+    overflow:hidden;
+}
+
+.fotosEsme ul{
+    padding:0;
+    display:flex;
+    width:400%;
+    animation: transicion 10s infinite alternate;
+}
+
+.fotosEsme li{
+    width:100%;
+    list-style:none;
+}
+
+.fotosEsme ul li img{
+    width:100%;
+}
+
+@keyframes transicion{
+    0%{margin-left:0%;}
+    25% {margin-left: 0%;}
+
+    35% {
+        margin-left: -135%;
+    }
+
+    55% {
+        margin-left: -135%;
+    }
+
+    85% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
+   
+}
+
+#biografia{
+    margin:3% 0 0 0;
+    text-align:justify;
+    font-weight:bold;
+}
+
+#Firma{
+    margin-top:20px;
+    text-align:right;
+}
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+  
+ html body  .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+   
+  html body header h1 {
+        font-size: large;
+        background-size: 40px auto;
+        margin-right: 0;
+    }
+
+    html body header input {
+        width: 20%;
+        height: 20px;
+        margin: 40px 0 0 15%;
+        padding-left: 22px;
+    }
+
+    html body header a {
+        font-size: 10px;
+        margin: 45px 0 0 8px;
+    }
+
+
+  html body  nav ol {
+        margin-left: 0;
+    }
+
+
+   html body nav > ol > li {
+        width: 80px;
+        padding:0;
+              }
+
+    html body    nav > ol > li > a {
+            font-size: 12px;
+          padding:0;        
+         
+        }
+
+   html body nav ol li ul {
+        width: 60px;
+    }
+
+
+   html body .llamadaAccion {
+        height: 300px;
+    }
+
+
+   html body .ComprarYa {
+        top: 75%;
+        left: 40%;
+        font-size:small;
+    }
+
+  html body  .categorias > div {
+        width: 49%;
+    }
+
+  html body  .categorias div div a {
+        font-size: x-large;
+    }
+
+   html body .categorias > div:nth-last-child(1) {
+        width: 50%;
+    }
+   html body .propaganda #enviogratis{
+       height:auto;
+       font-size:small;
+   }
+
+   html body #etiquetas a {
+        line-height: 220px;
+        font-size: large;
+    }
+
+    html body #etiquetas a i {
+        font-size: large;
+        padding-left:20%;
+    }
+
+    html body #etiquetas {
+        height: 220px;
+    }
+
+    html body #lafatshionistadiv {
+        left: 60%;
+        top: 60px;
+    }
+
+        html body #lafatshionistadiv img {
+            width: 30%;
+        }
+
+    html body footer h3 {
+        font-size: 10px;
+    }
+
+
+        /*Estilo para pagina zapatos de 600px para abajo*/
+
+    html body .banner {
+        height: 60px;
+        font-size: 30px;
+        line-height: 60px;
+    }
+
+    html body .filtro {
+        width: 85px;
+    }
+
+        html body .filtro h6 {
+            font-size: 11px;
+        }
+
+        html body .filtro label {
+            font-size: 10px;
+        }
+
+
+    html body details summary {
+        font-size: 12px;
+    }
+
+    html body #infoZapatos a {
+        width: 45%;
+        font-size: 13px;
+    }
+
+
+        html body #infoZapatos a h6 {
+            padding-top: 5px;
+            font-size: 12px;
+        }
+
+               
+    /*Estilo para la página Conóceme*/
+   
+    /*Estilo para la pagina GaleriaClientas*/
+    html body .comentarios {
+        text-align: justify;
+    }
+    html body .mGaleria {
+        width: 70%;
+        height: 10000px;
+        margin: 130px 15% 5% 15%;
+    }
+
+    /*Estilo para la página del blog*/
+    html body .articulos {
+        width: 60%;
+    }
+
+
+    html body .suscripcion {
+        width: 35%;
+    }
+
+    html body .articuloPreview h3, .articuloPreview p {
+        text-align: justify;
+    }
+
+    html body .leer-mas {
+        margin: 0 0 0 60%;
+        font-size: 14px;
+        height: 30px;
+        line-height: 25px;
+    }
+
+        html body .leer-mas:hover {
+            background-color: #632768;
+        }
+
+    /*Estilos para la suscripción*/
+
+
+    html body .suscripcion label {
+        padding-left: 5px;
+        font-size: 12px;
+    }
+
+    html body .suscripcion input {
+        display: block;
+        margin: 0 0 5px 5px;
+        height: 15px;
+        width: 90%;
+    }
+
+    html body .suscripcion select {
+        display: block;
+        margin: 0 0 5px 5px;
+        width: 90%;
+        font-size: 10px;
+    }
+
+    html body #submit {
+        margin: 15px 0 30px 5px;
+        height: 20px;
+    }
+
+    html body .suscripcion h4 {
+        font-size: medium;
+    }
+
+    /*Estilos para el boton de contactanos de politicas*/
+    html body .botoncito {
+        /*width: 70%;*/
+        font-size: 15px;
+        width: 180px;
+        height: 30px;
+        line-height: 20px;
+    }
+
+    /*Estilo para la bota*/
+    html body .visualizacion {
+        width: 25%;
+        margin-top: 5%;
+        float: left;
+    }
+
+    html body .botita {
+        width: 100%;
+    }
+
+
+
+    html body .informacionBota {
+        border-bottom: 1px solid black;
+        margin: 0;
+        font-size: small;
+    }
+
+    html body .Detalles-Medidas {
+        font-size: 10px;
+    }
+
+    html body #descripcion {
+        text-align: justify;
+        font-size: 12px;
+    }
+
+    html body .header-medida {
+        font-size: small;
+    }
+
+    html body .medida {
+        font-size: small;
+    }
+
+    html body .preview {
+        width: 50%;
+        padding-left: 20px;
+    }
+
+    html body .detallesZapato {
+        float: left;
+        width: 25%;
+        margin-top: 10%;
+    }
+
+    html body #precio {
+        font-size: small;
+    }
+
+    html body .color-talla {
+        font-size: small;
+    }
+
+    html body .detallesZapato select {
+        font-size: small;
+    }
+
+    html body #Carrito {
+        font-size: 15px;
+        width: 160px;
+    }
+
+    html body #titulo-similares {
+        text-align: center;
+        font-size: 25px;
+        margin: 0;
+    }
+
+    html body .articulo-similar h6 {
+        font-size: 10px;
+    }       
+}
+
+
+
+@media screen and (max-width: 950px) {
+   
+
+
+   body .column {
+        flex: 100%;
+        max-width: 50%;
+    }
+    
+   body header h1 {
+        font-size: x-large;
+        background-size: 50px auto;
+        margin: 0 0 0 3%;
+    }
+
+    body header input {
+        width: 18%;
+        height: 20px;
+        margin: 40px 0 0 14%;
+        padding-left: 22px;
+    }
+
+   body header a {
+        font-size: 13px;
+        margin: 40px 0 0 5px;
+    }
+
+    body nav > ol > li {
+        width: 80px;
+    }
+
+        body nav > ol > li > a {
+            font-size: 14px;
+        }
+
+
+    body nav ol li ul {
+        width: 110px;
+    }
+
+
+    body .llamadaAccion {
+        height: 300px;
+    }
+
+
+    body .ComprarYa {
+        top: 75%;
+        left: 40%;
+    }
+
+    body .categorias > div {
+        width: 49%;
+    }
+
+    body .categorias div div a {
+        font-size: x-large;
+    }
+
+    body .categorias > div:nth-last-child(1) {
+        width: 50%;
+    }
+
+    body #etiquetas a {
+        font-size: 22px;
+        padding-left:10%;
+    }
+
+    body #etiquetas i{
+        font-size:22px;
+    }
+
+    body #etiquetas {
+        height: 330px;
+    }
+
+    body #lafatshionistadiv {
+        left: 60%;
+        top: 60px;
+    }
+
+        body #lafatshionistadiv img {
+            width: 30%;
+        }
+
+    body footer h3 {
+        font-size: 10px;
+    }
+
+
+    /*Estilo para pagina zapatos de 600px para abajo*/
+
+    body .banner {
+        height: 60px;
+        font-size: 30px;
+        line-height: 60px;
+    }
+
+    body .filtro {
+        width: 85px;
+    }
+
+        body .filtro h6 {
+            font-size: 11px;
+        }
+
+        body .filtro label {
+            font-size: 10px;
+        }
+
+
+    body details summary {
+        font-size: 12px;
+    }
+
+    body #infoZapatos a {
+        width: 45%;
+        font-size: 13px;
+    }
+
+
+        body #infoZapatos a h6 {
+            padding-top: 5px;
+            font-size: 12px;
+        }
+
+
+    /*Estilo para la página Conóceme*/
+
+    /*Estilo para la pagina GaleriaClientas*/
+    body .comentarios {
+        text-align: justify;
+    }
+
+    body .mGaleria {
+        height: 4500px;
+    }
+
+    /*Estilo para la página del blog*/
+    body .articulos {
+        width: 60%;
+    }
+
+
+    body .suscripcion {
+        width: 35%;
+    }
+
+    body .articuloPreview h3, body .articuloPreview p {
+        text-align: justify;
+    }
+
+    body .leer-mas {
+        margin: 0 0 0 60%;
+        font-size: 14px;
+        height: 30px;
+        line-height: 25px;
+    }
+
+        body .leer-mas:hover {
+            background-color: #632768;
+        }
+
+    /*Estilos para la suscripción*/
+
+
+    body .suscripcion label {
+        padding-left: 5px;
+        font-size: 12px;
+    }
+
+    body .suscripcion input {
+        display: block;
+        margin: 0 0 5px 5px;
+        height: 15px;
+        width: 90%;
+    }
+
+    body .suscripcion select {
+        display: block;
+        margin: 0 0 5px 5px;
+        width: 90%;
+        font-size: 10px;
+    }
+
+   body #submit {
+        margin: 15px 0 30px 5px;
+        height: 20px;
+    }
+
+    body .suscripcion h4 {
+        font-size: medium;
+    }
+
+    /*Estilos para el boton de contactanos de politicas*/
+    body .botoncito {
+        /*width: 70%;*/
+        font-size: 15px;
+        width: 180px;
+        height: 30px;
+        line-height: 20px;
+    }
+
+    /*Estilo para la bota*/
+    body .visualizacion {
+        width: 25%;
+        margin-top: 5%;
+        float: left;
+    }
+
+    body .botita {
+        width: 100%;
+    }
+
+
+
+    body .informacionBota {
+        border-bottom: 1px solid black;
+        margin: 0;
+        font-size: small;
+    }
+
+    body .Detalles-Medidas {
+        font-size: 10px;
+    }
+
+    body #descripcion {
+        text-align: justify;
+        font-size: 12px;
+    }
+
+    body .header-medida {
+        font-size: small;
+    }
+
+    body .medida {
+        font-size: small;
+    }
+
+    body .preview {
+        width: 50%;
+        padding-left: 20px;
+    }
+
+    body .detallesZapato {
+        float: left;
+        width: 25%;
+        margin-top: 10%;
+    }
+
+    body #precio {
+        font-size: small;
+    }
+
+    body .color-talla {
+        font-size: small;
+    }
+
+    body .detallesZapato select {
+        font-size: small;
+    }
+
+    body #Carrito {
+        font-size: 15px;
+        width: 160px;
+    }
+
+    body #titulo-similares {
+        text-align: center;
+        font-size: 25px;
+        margin: 0;
+    }
+
+    body .articulo-similar h6 {
+        font-size: 10px;
+    }       
+  
+}
+
+
+ 
+@media only screen and (max-width: 1190px) {
+    
+
+    header h1 {
+        font-size: xx-large;
+        background-size: 50px auto;
+        margin: 0 0 0 3%;
+    }
+
+    header input {
+        width: 18%;
+        height: 20px;
+        margin: 40px 0 0 22%;
+        padding-left: 22px;
+    }
+
+    header a {
+        font-size: 15px;
+        margin: 40px 0 0 5px;
+    }
+
+    nav>ol{
+        margin-left:10%;
+    }
+
+    nav > ol > li {
+        width: 80px;
+    }
+
+        nav > ol > li > a {
+            font-size: 14px;
+        }
+
+    nav ol li ul {
+        width: 110px;
+    }
+
+    #etiquetas a {      
+        font-size: 50px;       
+    }
+
+        #etiquetas a i {
+           
+            padding-left: 5%;
+            padding-right: 10px;
+        }
+
+        /*Pagina de zapatos*/
+    #infoZapatos a h6 {
+        
+        font-size: 10px;
+    }
+
+    mPerfectFit {        
+        height: 1800px;        
+    }
+
+    .leer-mas{
+        margin-left:70%;
+    }
+}
+
+
+

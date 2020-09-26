@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Ajedrez"
+             x:Class="Ajedrez.MainPage" Title="Torneo Ajedrez" BackgroundColor="#009688">
+
+    <StackLayout Margin="20">
+        <Label Text="Bienvenido al primer torneo de ajedrez municipal de Sabinas" FontSize="35"  LineBreakMode="WordWrap" HorizontalTextAlignment="Center" FontAttributes="Bold" TextColor="White" FontFamily="Arial"></Label>
+        <Image Source="chess.png" HorizontalOptions="Center" HeightRequest="250"></Image>
+        <Label Text="¡No te lo puedes perder!" FontSize="24" HorizontalTextAlignment="Center" TextColor="White" FontFamily="Arial"></Label>
+    </StackLayout>
+</ContentPage>
